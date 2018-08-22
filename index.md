@@ -83,4 +83,3 @@ This usually require some experience.
 - LinEnum 
 - curl 
 - Burp suite
-- 
