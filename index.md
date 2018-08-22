@@ -1,5 +1,8 @@
 # Getting Started with boot2root 
 
+## Hackthebox Retired Write up
+- [Silo](https://lycjackie.github.io/boot2root/silo)
+
 ## Enumeration
 
 Enumeration is normally the key to success for these kind of challenges
