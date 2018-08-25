@@ -69,7 +69,9 @@ By playing around with the json. I managed to get some errors
 
 ![errors](https://raw.githubusercontent.com/lycjackie/boot2root/master/images/celestial.png)
 
-with some googling, I managed to find a nodejs shell code. https://github.com/ajinabraham/Node.Js-Security-Course/blob/master/nodejsshell.py
+with some googling, I managed to find a nodejs shell code. 
+
+https://github.com/ajinabraham/Node.Js-Security-Course/blob/master/nodejsshell.py
 
 So the final payload for the cookie look something like this
 
