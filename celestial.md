@@ -5,7 +5,7 @@
 
 ## Enumeration
 
-I started off with a masscan for all 65535 ports and follow it up by nmap
+You should start off with a masscan for all 65535 ports and follow it up by nmap
 
 ```
 root@kali:~/Desktop/HTB/Celestial# nmap -sS -sV -sC -p 3000 10.10.10.85      
@@ -65,11 +65,13 @@ This show us that we are setting a cookie with name `profile` of the following v
 {"username":"Dummy","country":"Idk Probably Somewhere Dumb","city":"Lametown","num":"2"}
 ```
 
-By playing around with the json. I managed to get some errors
+By playing around with the json a bit, you can see that there are some errors being display.
+
+More importantly the `node-serialize`
 
 ![errors](https://raw.githubusercontent.com/lycjackie/boot2root/master/images/celestial.png)
 
-with some googling, I managed to find a nodejs shell code. 
+With some googling about nodejs serialize issue, you can find some nodejs shellcode available.
 
 https://github.com/ajinabraham/Node.Js-Security-Course/blob/master/nodejsshell.py
 
@@ -83,7 +85,7 @@ So the final payload for the cookie look something like this
 
 ### Getting Root
 
-Once I am in the system. The first suspicious file I see was
+Once you gotten a basic shell, there is a suspicious file staring at you.
 
 ```
 sun@sun:~$ ls -la
@@ -100,7 +102,7 @@ This particular file in sun `home` directory is owned by root and the `date` com
 
 
 
-After playing around with the home directory. I found the following
+After playing around with the home directory. You will find the following
 
 ```
 sun@sun:~/Documents$ ls -la
@@ -119,7 +121,7 @@ Script is running...
 
 ```
 
-Note that the content of `output.txt` is identical to `script.py`. Which lead me to think that maybe root is running the script periodically.
+Note that the content of `output.txt` is identical to `script.py`. Which gave the clue that that maybe root is running the script periodically.
 
 Also note that we own the file for `script.py` which also mean that we can write anything into the file.
 
@@ -137,7 +139,7 @@ p=subprocess.call(["/bin/sh","-i"])
 
 and 5 mins of waiting. 
 
-I managed to get root
+Tada root!
 
 ```
 root@sun:~# wc -c root.txt
