@@ -67,7 +67,7 @@ This show us that we are setting a cookie with name `profile` of the following v
 
 By playing around with the json. I managed to get some errors
 
-![errors](https://github.com/lycjackie/boot2root/images/celestial.png)
+![errors](https://raw.githubusercontent.com/lycjackie/boot2root/master/images/celestial.png)
 
 with some googling, I managed to find a nodejs shell code. https://github.com/ajinabraham/Node.Js-Security-Course/blob/master/nodejsshell.py
 
