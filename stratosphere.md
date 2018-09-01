@@ -309,7 +309,7 @@ question()
 
 > Note the user input is read by input() instead of raw_input()
 
-Remember our `sudo -l` result. We can run any `python*` command with root and we know that `python2 input` allow you to run any command as `eval`. So let's us check if `python2` exist in the machine
+Remember our `sudo -l` result. We can run any `python*` command with root and we know that `python2 input()` effectively is the same as  `eval(raw_input())`. So let's us check if `python2` exist in the machine
 
 ```bash
 richard@stratosphere:~$ ls -la /usr/bin/python*
