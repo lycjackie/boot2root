@@ -3,6 +3,7 @@
 ## Hackthebox Retired Write up
 - [Silo](https://lycjackie.github.io/boot2root/silo)
 - [Celestial](https://lycjackie.github.io/boot2root/celestial)
+- [Stratosphere](https://lycjackie.github.io/boot2root/stratosphere)
 
 ## Enumeration
 
