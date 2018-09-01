@@ -106,7 +106,7 @@ and viewing source did not yield any interesting results.
 
 ### Exploring /manager
 
-![1535811619980]((https://raw.githubusercontent.com/lycjackie/boot2root/master/images/stratosphere/tomcat.png)
+![1535811619980](https://raw.githubusercontent.com/lycjackie/boot2root/master/images/stratosphere/tomcat.png)
 
 when we visit `/manager` we can see that is a tomcat services. Which most likely means that `java` is installed on the server.
 
@@ -118,7 +118,7 @@ Visiting the `/Monitoring` will redirect you to `http://10.10.10.64/Monitoring/e
 
 Next we try some random 404 pages and we get the following image.
 
-![1535811802070]((https://raw.githubusercontent.com/lycjackie/boot2root/master/images/stratosphere/404.png)
+![1535811802070](https://raw.githubusercontent.com/lycjackie/boot2root/master/images/stratosphere/404.png)
 
 While exploring the pages manually, notices that all pages will end with `.action`. This give us some lead on what to search for.  Which gave us the result for `Apache Struts CVE-2017-5638 https://github.com/mazen160/struts-pwn`
 
