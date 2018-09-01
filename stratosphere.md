@@ -59,9 +59,11 @@ nmap -sC -sV -p $(cat first-scan | cut -d " " -f4 | cut -d "/" -f1 | paste -sd "
 
 ```
 
-The results show that there are `HTTP` services running, 
+The results show that `HTTP` service is running, 
 
-Next we should run some directory listing while we enumerate the website manually and see if we can find anything interesting. Starting with port `8080` because is more uncommon compare to `80`
+Next we should run some directory listing while we enumerate the website manually and see if we can find anything interesting. 
+
+Starting with port `8080` because is more uncommon compare to `80`
 
 ### Gobuster
 
